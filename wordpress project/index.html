@@ -1,0 +1,95 @@
+
+
+<!DOCTYPE html>
+<html language_attributes(); ?>>
+<head>
+  <meta charset="<?php bloginfo('charset'); ?>">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title><?php bloginfo('name'); ?> | <?php bloginfo('description'); ?></title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+    body {
+      font-family: 'Segoe UI', sans-serif;
+      background: #ffffff;
+      color: #222;
+      line-height: 1.6;
+    }
+    header {
+      background-color: #002855;
+      color: white;
+      padding: 40px 20px;
+      text-align: center;
+    }
+    nav {
+      background-color: #00509e;
+      padding: 10px 0;
+      text-align: center;
+    }
+    nav a {
+      color: white;
+      text-decoration: none;
+      margin: 0 20px;
+      font-weight: 600;
+    }
+    nav a:hover {
+      text-decoration: underline;
+    }
+    section {
+      padding: 60px 20px;
+      max-width: 1000px;
+      margin: auto;
+    }
+    section h2 {
+      margin-bottom: 20px;
+      color: #00509e;
+    }
+    footer {
+      background-color: #222;
+      color: white;
+      text-align: center;
+      padding: 30px 20px;
+      font-size: 14px;
+    }
+  </style>
+  <?php wp_head(); ?>
+</head>
+<body <?php body_class(); ?>>
+
+<header>
+  <h1><?php bloginfo('name'); ?></h1>
+  <p><?php bloginfo('description'); ?></p>
+</header>
+
+<nav>
+  <a href="#about">About</a>
+  <a href="#services">Services</a>
+  <a href="#contact">Contact</a>
+</nav>
+
+<section id="about">
+  <h2>About Us</h2>
+  <p>This section represents the “About” content. Replace this text with content from bluedigital.co.in or use the WordPress editor to manage this area dynamically later.</p>
+</section>
+
+<section id="services">
+  <h2>Our Services</h2>
+  <p>This section describes services provided by BlueDigital. Add relevant headings, images, and layout blocks here.</p>
+</section>
+
+<section id="contact">
+  <h2>Contact Us</h2>
+  <p>Email: contact@bluedigitalreplica.com</p>
+  <p>Phone: +91-XXXXXXXXXX</p>
+</section>
+
+<footer>
+  <p>&copy; <?php echo date('Y'); ?> BlueDigital Replica. All Rights Reserved.</p>
+</footer>
+
+<?php wp_footer(); ?>
+</body>
+</html>
